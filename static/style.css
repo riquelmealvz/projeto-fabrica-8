@@ -1,0 +1,113 @@
+/* Global resets / base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container/layout */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Header / Navigation */
+header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+header h1 {
+  font-size: 2rem;
+  color: #444;
+}
+
+/* List of cards (pacientes / médicos) */
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card .info {
+  padding: 15px;
+}
+.card .info h2 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #222;
+}
+.card .info p {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Detail page */
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.detail img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.detail .info {
+  max-width: 600px;
+}
+.detail .info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.detail .info p {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+/* Footer (opcional) */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacientes cadastra</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Hospital Oscar Freire</h1>
+    <div class="container">
+        <p>clique aqui para listar pacientes</p>
+        <button>
+            <a href="{{ url_for('listar_pacientes') }}">listar pacientes</a>
+        </button>
+    </div> 
+</body>
+</html>
+    
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicos disponiveis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1></h1>
+    <div class="container">
+        <p>clique aqui para listar medicos</p>
+        <button>
+            <a href="{{ url_for('listar_medicos') }}">Listar medicos </a>
+        </button>
+    </div> 
+</body>
+</html>
+    

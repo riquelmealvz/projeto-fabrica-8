@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+</head>
+<body>
+    <h1>Detalhe do medico</h1>
+    <div class="container">
+        <p><strong>ID: </strong> {{ medico.id }}</p>
+        <p><strong>nome: </strong> {{ medico.nome }}</p>
+        <p><strong>idade</strong>: </strong> {{ medico.idade }}</p>
+       
+        <img src="{{medico.image }}" alt="imagem do {{ medico.nome }}">
+
+        
+    </div>
+</body>
+</html>
